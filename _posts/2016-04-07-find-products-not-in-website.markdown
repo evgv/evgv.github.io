@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Magento. Sql query for find all products what not  applied to website."
-date:   2016-03-06 00:28:03 +0200
+date:   2016-04-07 12:26:03 +0200
 categories: magento sql
 ---
 If you need find a products what not applied to website you can execute this query and it return a list of all product ids whta not applied to any website.
@@ -17,7 +17,7 @@ Query:
   WHERE cpw.product_id IS NULL
 {% endhighlight %}
 
-Read more about the [SQL JOIN][sql-join] for more info.
+Read about the [SQL JOIN][sql-join] for more info.
 
 [sql-join]: http://www.w3schools.com/sql/sql_join.asp
 
