@@ -1,0 +1,28 @@
+--
+layout: post
+title:  "Hello world post!"
+date:   2016-03-06 00:28:03 +0200
+categories: tcat
+---
+Получается тут пишем что угодно через редактор и булъдет статейка, прикольно. Выделяем `слово` чудненько.
+
+Пошли по сниппетам:
+
+Подсветка `PHP`
+
+{% highlight ruby %}
+function test($_a) {
+    if(is_numeric($_a)) {
+        echo $_a;
+    }
+}
+{% endhighlight %}
+
+Ну и ссылочки [Яп][t1] и [бебебебе] [t2]
+
+
+
+
+[t1]:   http://jekyllrb.com/docs/home
+[t2]:   https://github.com/jekyll/jekyll
+
