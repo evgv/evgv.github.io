@@ -5,7 +5,7 @@ date:   2016-04-07
 categories: magento sql
 ---
 If you need find a products what not applied to website you can execute this query and it return a list of all product ids whta not applied to any website.
-Can also improve this query for retrieve any need fileds besides `entity_id` like a `sku` etc, of can set specific website id for check it.
+Can also improve this query for retrieve any need fileds besides `entity_id` like a `sku` etc, or can set specific website id for check it.
 
 Query:
 
