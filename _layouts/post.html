@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -27,6 +26,8 @@ comments: true
   <script>
     var disqus_shortname = 'mblo'; 
     // var disqus_developer = 1;
+    var disqus_url        = '{{ site.url }}{{ page.url }}';
+    var disqus_title      = '{{ page.title }}';
     var disqus_identifier = "{{ page.url }}";
   
     (function() {
