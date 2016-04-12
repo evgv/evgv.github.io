@@ -1,13 +1,33 @@
-# Site settings
-title: mblo
-email: evgvzubkoff@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Web developer blog, inside, Magento, Php, Javascript and more. 
-  Information submitted in small articles on interesting topics.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://evgv.github.io" # the base hostname & protocol for your site
-twitter_username: evgvzubkoff
-github_username:  evgv
+# Site configuration
+  title: mblo
+  description: >
+    Web developer blog, inside, Magento, Php, Javascript and more. 
+    Information submitted in small articles on interesting topics.
+  url: "http://evgv.github.io"
+  date_format: '%B %d, %Y'
+  fort_awesome_icon: 'cog fa-spin'
 
-# Build settings
-markdown: kramdown
+# Owner configuration
+  owner:
+    name: Evgen Zubkov
+    email: evgvzubkoff@gmail.com
+    github: evgv
+    twitter: evgvzubkoff
+    linkedin: 
+    facebook:
+    google_plus:
+    youtube:
+
+# Post sharing icons
+  sharing:
+    twitter: true
+    linkedin: true
+    facebook: true
+    google_plus: true
+    reddit: true
+
+# Disqus comments configuration (leave blank to disable comments)
+  disqus_shortname: 'evgvgithubio'
+
+# Markdown
+  markdown: kramdown
