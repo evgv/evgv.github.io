@@ -22,9 +22,13 @@ comments: true
   
 </article>
 
-{% if post.comments %}
+{% if page.comments %}
   <div id="disqus_thread"></div>
   <script>
+    var disqus_shortname = 'mblo'; 
+    // var disqus_developer = 1;
+    var disqus_identifier = "{{ page.url }}";
+  
     (function() {
       var d = document, s = d.createElement('script');
       s.src = '//evgvgithubio.disqus.com/embed.js';
