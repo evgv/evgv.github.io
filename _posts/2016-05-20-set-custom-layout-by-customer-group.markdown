@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Magento. Change layout on fly in depends from current customer group."
-date:   2016-04-07
+date:   2016-05-20
 categories: [magento, layout]
 ---
 If you need find a products what not applied to website you can execute this query and it return a list of all product ids whta not applied to any website.
