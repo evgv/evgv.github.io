@@ -14,11 +14,12 @@ Code:
 Initialize event in front section
 
 {% highlight xml %}
-  <frontend>
+
+    <frontend>
       
-      ...
-      
-      <events>
+    ...
+
+    <events>
         <controller_action_layout_load_before>
             <observers>
                 <VENDOR_EXTENSION_NAME_model_observer>
@@ -28,11 +29,12 @@ Initialize event in front section
                 </VENDOR_EXTENSION_NAME_model_observer>
             </observers>
         </controller_action_layout_load_before>
-      </events>	
+    </events>	
+
+    ...
       
-      ...
-      
-	</frontend>
+    </frontend>
+    
 {% endhighlight %}
 
 `../Model/Observer.php`
