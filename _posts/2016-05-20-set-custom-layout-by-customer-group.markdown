@@ -47,6 +47,7 @@ Add observer for catch event
 
 Setup in our layout blocks with custom markdown for csutomer gropus. We can use this for any conditions.
 
+{% highlight xml %}
   <layout version="1.0.0">
       
       ...
