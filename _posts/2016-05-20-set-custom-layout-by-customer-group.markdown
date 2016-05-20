@@ -78,9 +78,5 @@ Setup in our layout blocks with custom markdown for csutomer gropus. We can use 
       
       ...
       
-	</layout>
+</layout>
 {% endhighlight %}
-
-Read about the [SQL JOIN][sql-join] for more info.
-
-[sql-join]: http://www.w3schools.com/sql/sql_join.asp
