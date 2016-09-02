@@ -21,5 +21,4 @@ The following version have passed all tests:
 - CE 1.7.x  
 - CE 1.9.x  
 
-[More info][more-info]
-[more-info]: https://github.com/evgv/NoName_SimpleSeo
+[More info](https://github.com/evgv/NoName_SimpleSeo)
