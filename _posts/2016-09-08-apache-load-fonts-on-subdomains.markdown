@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Apache. Load fonts on subdomains."
+title:  "Apache. Load fonts on sub/diff domains."
 date:   2016-09-08
 categories: [apache, htaccess, fonts, cross-domain]
 ---
-# Apache. Load fonts on sub/different domains.
+# Apache. Load fonts on sub/diff domains.
 
 I encountered this problem when install `Intenco` theme to one of the shops that works on `Magento`. 
 Which had 5 sites with individual domains, and storeviews for `US`, `GB`, `DE`, `FR` and `IT`.
