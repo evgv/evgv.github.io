@@ -31,3 +31,6 @@
 
 # Markdown
   markdown: kramdown
+  
+# Gems
+  gems: [jekyll-sitemap]
