@@ -5,8 +5,6 @@ date:   2016-09-13
 categories: [magento, configurable, cart]
 ---
 
-#Impossible to add the configgurable products to the cart.
-
 I have a big issue with configurable products. Impossible to add them to the cart. I always get `"Please specify the product's option(s)."`.
 There is no error in `system.log` or `exception.log`.
 
