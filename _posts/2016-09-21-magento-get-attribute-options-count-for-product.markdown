@@ -10,6 +10,9 @@ categories: [magento, attribute, product, options]
 1. Create little extension with helper class or add code to existed extension.
 
 {% highlight php %}
+
+<?php 
+
 class Vendor_ExtensionName_Helper_Data extends Mage_Core_Helper_Abstract 
 {
     protected $_attributes;
