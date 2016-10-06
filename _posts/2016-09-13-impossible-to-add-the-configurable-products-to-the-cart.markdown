@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento. Impossible to add the configgurable products to the cart."
+title:  "Magento. Impossible to add the configurable products to the cart."
 date:   2016-09-13
 categories: [magento, configurable, cart]
 ---
