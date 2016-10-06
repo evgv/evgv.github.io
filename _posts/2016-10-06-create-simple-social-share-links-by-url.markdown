@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Create social share links."
+title:  "Create simple social share links."
 date:   2016-10-06
 categories: [social, share]
 ---
