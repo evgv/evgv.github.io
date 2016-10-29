@@ -38,3 +38,7 @@
   
 # Gems
   gems: [jekyll-sitemap]
+  
+# Sass
+  sass:
+    style: compressed 
