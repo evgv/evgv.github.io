@@ -23,6 +23,9 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    border-top: 10px solid $light-blue-main-color;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
 }
 
 
@@ -35,6 +38,12 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $h-color;
+    font-family: $open-sans-font-family;
+    font-weight: $h-fonr-weight;
 }
 
 
@@ -91,15 +100,14 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $light-blue-main-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $light-blue-main-color;
     }
 
     &:hover {
-        color: $text-color;
         text-decoration: underline;
     }
 }
@@ -164,15 +172,30 @@ pre {
     padding-left: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    //width: 640px;
+
+    @include media-max-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
+
+    /*
+    @include media-max-and-min-query(959px, 768px) {
+        width: 508px;   
+    }
+
+
+    @include media-max-and-min-query(767px, 480px) {
+        width: 420px;
+    }
+
+    @include media-max-query(767px) {
+        width: 300px;
+    }
+    */
 }
-
-
 
 /**
  * Clearfix

@@ -1,37 +1,40 @@
-<footer class="site-footer">
+<footer class="footer">
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.owner.email }}">{{ site.owner.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.owner.github %}
-          <li>
-            {% include icon-github.html username=site.owner.github %}
-          </li>
-          {% endif %}
-
-          {% if site.owner.twitter %}
-          <li>
-            {% include icon-twitter.html username=site.owner.twitter %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
+    {% if site.description %}  
+      <div class="description">
         <p>{{ site.description }}</p>
       </div>
+    {% endif %}
+
+    {% if site.disclaimer %}  
+      <div class="disclaimer">
+        <p>{{ site.disclaimer }}</p>
+      </div>
+    {% endif %}
+
+    <div class="followme">
+      <p>
+        <span>Follow Me: </span> 
+        {% if site.owner.github %}
+          {% include icon-github.html username=site.owner.github %}
+        {% endif %}
+
+        {% if site.owner.twitter %}
+          {% include icon-twitter.html username=site.owner.twitter %}
+        {% endif %}
+
+        {% include icon-rss.html %}
+
+      </p>
     </div>
+
+    {% if site.copyright %}  
+      <div class="copyright">
+        <p>{{ site.copyright }}</p>
+      </div>
+    {% endif %}
 
   </div>
 
