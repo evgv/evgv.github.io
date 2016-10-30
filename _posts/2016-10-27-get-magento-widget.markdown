@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento. get widget."
+title:  "Magento. Get widget."
 date:   2016-10-27
 categories: [magento, widget, template, cms, static, layout]
 ---
