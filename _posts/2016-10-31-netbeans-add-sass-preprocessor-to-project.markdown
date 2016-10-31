@@ -19,11 +19,11 @@ and press `Configure Executables` then into
 ![window]({{ site.url }}/assets/f1e34296b5.jpg) 
 
 
-click to `Search` opposite `SASS` field if you already installed it or `Install Sass` then you will be automaticly open [install-sass][install-sass] in your default web browser.
+click to `Search` opposite `Sass` field if you already installed it or `Install Sass` then you will be automaticly open [install-sass][install-sass] in your default web browser.
 
-Then follow the instructions for install SASS on your machine(windows or unix). 
+Then follow the instructions for install Sass on your machine(windows or unix). 
 
-Thereafter click `Search` and field with path to SASS filled automaticly or put it with your hands. Then back to window with preprocessors setting and setup `input` _/sass_(or full path from project root folder) and `output` _/css_ (or full path from project root folder).
+Thereafter click `Search` and field with path to Sass filled automaticly or put it with your hands. Then back to window with preprocessors setting and setup `input` _/sass_(or full path from project root folder) and `output` _/css_ (or full path from project root folder).
 
 
-After this, your SASS that files stored in `input` after save will be compiled to CSS that, in turn will be stored in `output`, also you can disable auto compile after save and do it manually.
+After this, your Sass that files stored in `input` after save will be compiled to CSS that, in turn will be stored in `output`, also you can disable auto compile after save and do it manually.
