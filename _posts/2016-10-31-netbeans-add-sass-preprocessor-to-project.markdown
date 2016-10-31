@@ -5,13 +5,19 @@ date:   2016-10-31
 categories: [netbeans, css, sass]
 ---
 
-Open the Netbeans (my version is 8.1), go to `File > Project Properties > CSS Preprocessors > Sass tab` 
+Open the Netbeans (my version is 8.1),
 
-![see]({{ site.url }}/assets/e7312adfd3.jpg =500x) 
+go to `File > Project Properties > CSS Preprocessors > Sass tab` 
+
+
+![see]({{ site.url }}/assets/e7312adfd3.jpg) 
+
 
 and press `Configure Executables` then into 
 
-![window]({{ site.url }}/assets/f1e34296b5.jpg =500x) 
+
+![window]({{ site.url }}/assets/f1e34296b5.jpg) 
+
 
 click to `Search` opposite `SASS` field if you already installed it or `Install Sass` then you will be automaticly open [install-sass][install-sass] in your default web browser.
 
