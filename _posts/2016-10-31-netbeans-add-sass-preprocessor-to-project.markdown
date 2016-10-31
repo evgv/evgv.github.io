@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Netbeans. Add SASS preprocessor to your project."
+title:  "Netbeans. Add Sass preprocessor to your project."
 date:   2016-10-31
 categories: [netbeans, css, sass]
 ---
