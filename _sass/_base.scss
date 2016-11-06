@@ -225,5 +225,11 @@ pre {
         path {
             fill: $grey-color;
         }
+
+        &:hover {
+            path {
+                fill: $light-blue-main-color;
+            }
+        }
     }
 }

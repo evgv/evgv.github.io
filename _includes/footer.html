@@ -17,12 +17,17 @@
     <div class="followme">
       <p>
         <span>Follow Me: </span> 
+
         {% if site.owner.github %}
           {% include icon-github.html username=site.owner.github %}
         {% endif %}
 
         {% if site.owner.twitter %}
           {% include icon-twitter.html username=site.owner.twitter %}
+        {% endif %}
+
+        {% if site.owner.linkedin %}
+          {% include icon-linkedin.html username=site.owner.linkedin %}
         {% endif %}
   
         {% include icon-rss.html %}
