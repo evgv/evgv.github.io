@@ -13,7 +13,8 @@ By defaut in admin panel on dashboard listed last 5 orders but currency code in 
 
 If you need show the right currency code follow next steps:
 
-1. Copy file 
+Copy file 
+-------------
 
 `../app/code/core/Mage/Adminhtml/Block/Dashboard/Orders/Grid.php` 
 
@@ -21,7 +22,8 @@ to
 
 `../app/code/local/Mage/Adminhtml/Block/Dashboard/Orders/Grid.php`
 
-2. Paste 
+Paste
+-------------
 
 {% highlight php %}
         $this->addColumn('total', array(
