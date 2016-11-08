@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Magento. Adminhtml dashboard last order reports show currency from order."
-date:   2016-11-06
+date:   2016-11-08
 categories: [magento, adminhtml, dashboard, reports, currency]
 ---
 
