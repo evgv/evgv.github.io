@@ -5,6 +5,8 @@
 
   <body>
 
+    {% include loader.html %}
+
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
@@ -12,14 +14,14 @@
     </div>
 
     {% include footer.html %}
-    
+
     {% if jekyll.environment == 'production' %}
       {% include analytics.html %}
     {% endif %}
 
     {% include css.html %}
     {% include js.html %}
-    
+
   </body>
 
 </html>
