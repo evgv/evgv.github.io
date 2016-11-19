@@ -9,6 +9,13 @@
     overflow: hidden;
 
     .followme {
+        > p {
+            > span {
+                @include media-max-query($on-mobile) {
+                    display: none;
+                }
+            }
+        }
         a {
             margin: 0 5px 0 5px;
             text-decoration: none;

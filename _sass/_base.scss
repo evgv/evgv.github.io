@@ -222,6 +222,11 @@ pre {
         height: 16px;
         vertical-align: middle;
 
+        @include media-max-query($on-mobile) {
+            width: 24px;
+            height: 24px;
+        }
+
         path {
             fill: $grey-color;
         }
