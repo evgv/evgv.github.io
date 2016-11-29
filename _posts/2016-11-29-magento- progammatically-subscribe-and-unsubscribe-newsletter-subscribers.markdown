@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento. Programmatically Subscribe and Unsubscribe Newsletter Subscribers"
+title:  "Magento. Programmatically Subscribe and Unsubscribe Newsletter Subscribers."
 date:   2016-11-29
 categories: [magento, newsletter, subscribe, unsubscribe]
 ---
