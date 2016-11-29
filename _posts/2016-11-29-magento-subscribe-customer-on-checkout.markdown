@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento. Subscribe customer on chekout"
+title:  "Magento. Subscribe customer on chekout."
 date:   2016-11-29
 categories: [magento, checkout, newsletter, subscribe, observer]
 ---
