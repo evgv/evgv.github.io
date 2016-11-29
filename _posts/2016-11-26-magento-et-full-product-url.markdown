@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento. Get full product URL"
+title:  "Magento. Get full product URL."
 date:   2016-11-26
 categories: [magento, product, url]
 ---
