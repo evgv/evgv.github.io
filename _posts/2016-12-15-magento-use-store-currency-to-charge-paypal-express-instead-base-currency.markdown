@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento. Use store currency to charge PayPal Express instaed base currency."
+title:  "Magento. Use store currency to charge PayPal Express instead base currency."
 date:   2016-12-15
 categories: [magento, paypal, currency, checkout]
 ---
