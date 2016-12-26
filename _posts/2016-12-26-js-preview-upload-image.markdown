@@ -10,4 +10,4 @@ categories: [js, pure, upload, image]
 Simple example how to add preview of image what will be uploaded from `input[type="file"]` on pure js.
 See JsFeedle below.
 
-<script async src="//jsfiddle.net/evgv/sLdeg1k2/embed/"></script>
+<script async src="//jsfiddle.net/evgv/sLdeg1k2/6/embed/"></script>
