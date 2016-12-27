@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JS. Preview upload image."
+title:  "Js. Preview upload image."
 date:   2016-12-26
 categories: [js, pure, upload, image]
 ---
