@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento 2. Remove block layout."
+title:  "Magento 2. Remove block from layout."
 date:   2017-01-02
 categories: [magento2, layout]
 ---
