@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Flush varnish cache, work with extension Phoenix_VarnishCache."
+title:  "Magento. Flush varnish cache, work with extension Phoenix_VarnishCache."
 date:   2017-01-04
 categories: [magento, phoenix,varnish, cache]
 ---
