@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Redis. Cli."
+date:   2017-02-26
+categories: [redis, cli, ubuntu]
+---
+
+{% gist eb17b24cb8af637d1c57d9c16c8d5d9a %}
