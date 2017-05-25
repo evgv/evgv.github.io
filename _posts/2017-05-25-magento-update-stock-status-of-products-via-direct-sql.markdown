@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Magento. Update stock status of products via direct SQL"
-date:   2017-05-26
+date:   2017-05-25
 categories: [magento, stock status, direc sql, attributes]
 ---
 
