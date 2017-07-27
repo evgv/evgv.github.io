@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JS. Advanced cookie manager new version 1.1.4"
-date:   2017-07-25
+date:   2017-07-27
 categories: [acm, advanced cookie manager, javascript, cookie]
 ---
 
