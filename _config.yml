@@ -36,8 +36,8 @@
 # Markdown
   markdown: kramdown
   
-# Gems
-  gems: [jekyll-sitemap, jekyll-gist]
+# Plugins
+  plugins: [jekyll-sitemap, jekyll-gist]
   
 # Sass
   sass:
