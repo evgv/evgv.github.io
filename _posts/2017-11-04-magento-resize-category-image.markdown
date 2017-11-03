@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Magento. Resize category image"
-date:   2017-04-11
+date:   2017-11-04
 categories: [magento, category, image, resize]
 ---
 
