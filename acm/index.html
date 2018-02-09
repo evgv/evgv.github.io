@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>ACM cities</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+
+        <!-- Primary Page Layout
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <h1 id="advancedcookiemanager">Advanced Cookie Manager</h1>
+
+        <h2 id="v11402192017">v 1.1.4 (02192017)</h2>
+
+        <p>Small client-side javascript library that makes managing cookies easy.</p>
+
+        <p><a href="#features">Features</a> <br />
+            <a href="#browser-compatibility">Browser Compatibility</a> <br />
+            <a href="#install">Install</a> <br />
+            <a href="#api-reference">API Reference</a></p>
+
+        <h2 id="features">Features</h2>
+
+        <ul>
+            <li><a href="http://www.rfc-editor.org/rfc/rfc6265.txt">RFC6265</a> compliant</li>
+
+            <li>Cross browser</li>
+
+            <li>Lightweight</li>
+
+            <li>No dependencies</li>
+        </ul>
+
+        <h2 id="browsercompatibility">Browser Compatibility</h2>
+
+        <p>The following browsers have passed all of the automated Cookies.js tests:</p>
+
+        <ul>
+            <li>Chrome</li>
+
+            <li>Firefox 3+</li>
+
+            <li>Safari 4+</li>
+
+            <li>Opera 10+</li>
+
+            <li>Internet Explorer 6+</li>
+        </ul>
+
+        <h2 id="install">Install</h2>
+
+        <h4 id="directdownload">Direct download</h4>
+
+        <p><a href="https://raw.githubusercontent.com/evgv/acm/master/src/build/acm.js">v1.1.4</a> (~ 13.94 KB)
+            <a href="https://raw.githubusercontent.com/evgv/acm/master/src/build/acm.min.js">v1.1.4 Minified</a> (~ 2.52 KB)</p>
+
+        <h4 id="usenpm">Use npm</h4>
+
+        <pre><code class="bash language-bash">    npm i advanced-cookie-manager
+</code></pre>
+
+        <h4 id="useyarn">Use yarn</h4>
+
+        <pre><code class="bash language-bash">    yarn add advanced-cookie-manager
+</code></pre>
+
+        <h2 id="apireference">API Reference</h2>
+
+        <p><strong>Methods</strong> <br />
+            <a href="#initialize">acm.initialize(options)</a> <br />
+            <a href="#set">acm.set(key, value, options = {})</a> <br />
+            <a href="#get">acm.get(key)</a> <br />
+            <a href="#unset">acm.unset(key)</a></p>
+
+        <h3 id="properties">Properties</h3>
+
+        <h4 id="expires">Expires</h4>
+
+        <p>A number (of seconds), a number parsable string, or a <code>Date</code> object of when the cookie will expire. By default is 0 (session cookie).</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">acm.expires = 3600; // Expires number format 1 hour
+acm.expires = '3600'; // Expires string format 1 hour
+acm.expires = new Date(2020, 0, 1); // Expires at Wed Jan 01 2020 00:00:00 GMT+0200
+</code></pre>
+
+        <h4 id="path">Path</h4>
+
+        <p>A string value of the path of the cookie. By default is '/'.</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">acm.path = '/'; // Path for all pages
+acm.path = '/cart'; // Path only for /cart page
+acm.path = '/success'; // Path only for /success page
+</code></pre>
+
+        <h4 id="domain">Domain</h4>
+
+        <p>A string value of the domain of the cookie. By default is equal to current domain.</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">acm.domain = 'www.example.com'; // Set www.example.com as default domain
+</code></pre>
+
+        <h4 id="secure">Secure</h4>
+
+        <p>A boolean value of whether or not the cookie should only be available over SSL. By default is <em>false</em>.</p>
+
+        <p><em>Just now it deprecated and dosen't use.</em></p>
+
+        <h3 id="additionalproperties">Additional properties</h3>
+
+        <h4 id="debug">Debug</h4>
+
+        <p>Enable debug option set show in console information about create/delee cookie.</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">acm.debug = false; // disable
+acm.debug = true; // enable
+</code></pre>
+
+        <h4 id="encode">Encode</h4>
+
+        <p>Set encode cookie <em>encodeUri()</em> value (encode by default), you can disable/enable this option.</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">acm.encode = false; // disable
+acm.encode = true; // enable
+</code></pre>
+
+        <h3 id="methods">Methods</h3>
+
+        <h4 id="acminitializeoptions">acm.initialize(options)</h4>
+
+        <p>Set default options for all new cookies</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">// Initialize all options
+acm.initialize({
+    expires : 3600,
+    path : '/',
+    domain : 'www.example.com',
+});
+
+// Initialize expires
+acm.initialize({
+    expires : 3600,
+});
+</code></pre>
+
+        <p>And now all new cookies without options has this options as default.</p>
+
+        <h4 id="acmsetkeyvalueoptions">acm.set(key, value [, options])</h4>
+
+        <p>Sets a cookie in the document. If the cookie already exist, it will be rewrite it.</p>
+
+        <p>| Option    | Description                                                                                        | Default     |
+            | --------: | -------------------------------------------------------------------------------------------------- | ----------- |
+            | <em>expires</em> | A number (of seconds), a number parsable string, or a <code>Date</code> object of when the cookie will expire | <code>0</code>         |
+            | <em>path</em>    | A string value of the path of the cookie                                                           | <code>/</code>         |
+            | <em>domain</em>  | A string value of the domain of the cookie                                                         | <code>empty</code>     |
+            | <em>secure</em>  | A boolean value of whether or not the cookie should only be available over SSL  (deprecated)       | <code>false</code>     |</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">// Setting a cookie value
+acm.set('key', 'value');
+
+// Setting cookies with additional options
+acm.set('key', 'value', { domain: 'www.example.com'});
+
+// Setting cookies with expiration values
+acm.set('key', 'value', { expires: 3600 }); // Expires in 1 hour
+acm.set('key', 'value', { expires: '3600' }); // Expires in 1 hour
+acm.set('key', 'value', { expires: new Date(2020, 0, 1) }); // Expires at Wed Jan 01 2020 00:00:00 GMT+0200
+</code></pre>
+
+        <h4 id="acmgetkey">acm.get(key)</h4>
+
+        <p>Returns the value of the most locally scoped cookie with the specified key.</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">// Get the cookie value
+acm.get('key'); // "value"
+</code></pre>
+
+        <p>If <code>key</code> is empty <code>acm()</code> method return all locally scoped cookies as array of items (cookies).</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">// Get all cookies
+acm.get(); // [[name  : name, value : value], [...], ...}]
+</code></pre>
+
+        <p></p>
+
+        <h4 id="acmunsetkey">acm.unset(key)</h4>
+
+        <p>Unse the most locally scoped cookie with the specified key.</p>
+
+        <p><strong>Example Usage</strong></p>
+
+        <pre><code class="javascript language-javascript">// Unset the cookie
+acm.unset('key');
+</code></pre>
+
+        <!-- End Document
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
+</html>
