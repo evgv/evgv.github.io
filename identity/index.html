@@ -1,103 +1,100 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Eugene Zubkov</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Eugene Zubkov</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Wrapper -->
+        <div id="wrapper">
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.png" alt="" /></span>
-							<h1>Eugene Zubkov</h1>
-							<p>Web Developer | Magento Specialist | PHP | E-commerce</p>
-						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="field">
-									<input type="email" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="field">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-								<div class="field">
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-								</div>
-								<div class="field">
-									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-								</div>
-								<div class="field">
-									<label>But are you a robot?</label>
-									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-								</div>
-							</div>
-							<ul class="actions special">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
-							<ul class="icons">
-								<!-- <li><a href="https://twitter.com/evgvzubkoff" class="fa-twitter">Twitter</a></li>
-								<li><a href="https://instagram.com/evgvzubkoff" class="fa-instagram">Instagram</a></li>
-								<li><a href="https://facebook.com/evgvzubkoff" class="fa-facebook">Facebook</a></li> -->
-								<li><a href="https://linkedin.com/in/evgvzubkoff" class="fa-linkedin">Linked In</a></li>
-								<!-- <li><a href="https://github.com/evgv" class="fa-github">Github</a></li> -->
-								<li><a href="mailto:evgvzubkoff@gmail.com" class="fa-envelope">E-mail</a></li>
-							</ul>
-						</footer>
-					</section>
+            <!-- Main -->
+            <section id="main">
+                
+                <div class="front">
+                    <header>
+                        <span class="avatar"><img src="images/avatar.png" alt="" /></span>
+                        <h1>Eugene Zubkov</h1>
+                        <p>Web Developer | Magento Specialist | PHP | E-commerce</p>
+                    </header>
+                    <footer>
+                        <ul class="icons">
+                            <li><a href="https://linkedin.com/in/evgvzubkoff" class="fa-linkedin">Linked In</a></li>
+                            <li><a href="mailto:evgvzubkoff@gmail.com" class="fa-envelope">E-mail</a></li>
+                        </ul>
+                    </footer>
+                </div>
+                
+                <div class="back">
+                    <header>
+                        <span class="avatar"><img src="images/back.jpg" alt="" /></span>
+                        <h1>#evgvzubkoff</h1>
+                        <p>Swim | Bike| Run | Repeat</p>
+                    </header>
+                    <footer>
+                        <ul class="icons">
+                            <li><a href="https://instagram.com/evgvzubkoff" class="fa-instagram">Instagram</a></li>
+                            <li><a href="https://www.strava.com/athletes/evgvzubkoff" class="fa-strava">Strava</a></li>
+                        </ul>
+                    </footer>
+                </div>
+   
+            </section>
+            
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="copyright">
+                    <!-- <li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+                </ul>
+            </footer>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<!-- <li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
-						</ul>
-					</footer>
+        </div>
+        
+        <!-- Styles -->
+        <style>
+            .is-flipped .front {
+                display: none;
+            }
+            
+            .back {
+                display: none;
+            }
+            
+            .is-flipped .back {
+                display: block;
+            }
+        </style>
 
-			</div>
+        <!-- Scripts -->
+        <script>
+            if ('addEventListener' in window) {
+                window.addEventListener('load', function () {
+                    document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+                });
+                
+                document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+            }
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
+            // random background colors
+            document.body.style.backgroundColor = cssHSL();
 
-				// random background colors
-				var cssHSL = "hsl(" + 360 * Math.random() + ',' +(25 + 70 * Math.random()) + '%,' + (85 + 10 * Math.random()) + '%)';
+            // flip card
+            var card = document.getElementById('main');
+                card.addEventListener('click', function () {
+                    card.classList.toggle('is-flipped');
 
-				document.body.style.backgroundColor = cssHSL;
+                    document.body.style.backgroundColor = cssHSL();
+                });
+                
+            function cssHSL() {
+                return "hsl(" + 360 * Math.random() + ',' + (25 + 70 * Math.random()) + '%,' + (85 + 10 * Math.random()) + '%)';
+            }
 
-				// flip card
-				var card = document.getElementById('main');
-					card.addEventListener( 'click', function() {
-					card.classList.toggle('is-flipped');
+        </script>
 
-					document.body.style.backgroundColor = "hsl(" + 360 * Math.random() + ',' +(25 + 70 * Math.random()) + '%,' + (85 + 10 * Math.random()) + '%)';;
-				});
-									
-			</script>
-
-	</body>
+    </body>
 </html>
