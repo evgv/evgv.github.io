@@ -14,35 +14,17 @@
 
             <!-- Main -->
             <section id="main">
-                
-                <div class="front">
-                    <header>
-                        <span class="avatar"><img src="images/avatar.png" alt="" /></span>
-                        <h1>Eugene Zubkov</h1>
-                        <p>Web Developer | Magento Specialist | PHP | E-commerce</p>
-                    </header>
-                    <footer>
-                        <ul class="icons">
-                            <li><a href="https://linkedin.com/in/evgvzubkoff" class="fa-linkedin">Linked In</a></li>
-                            <li><a href="mailto:evgvzubkoff@gmail.com" class="fa-envelope">E-mail</a></li>
-                        </ul>
-                    </footer>
-                </div>
-                
-                <div class="back">
-                    <header>
-                        <span class="avatar"><img src="images/back.jpg" alt="" /></span>
-                        <h1>#evgvzubkoff</h1>
-                        <p>Swim | Bike| Run | Repeat</p>
-                    </header>
-                    <footer>
-                        <ul class="icons">
-                            <li><a href="https://instagram.com/evgvzubkoff" class="fa-instagram">Instagram</a></li>
-                            <li><a href="https://www.strava.com/athletes/evgvzubkoff" class="fa-strava">Strava</a></li>
-                        </ul>
-                    </footer>
-                </div>
-   
+                <header>
+                    <span class="avatar"><img src="images/avatar.png" alt="" /></span>
+                    <h1>Eugene Zubkov</h1>
+                    <p>Web Developer | Magento Specialist | PHP | E-commerce</p>
+                </header>
+                <footer>
+                    <ul class="icons">
+                        <li><a href="https://linkedin.com/in/evgvzubkoff" class="fa-linkedin">Linked In</a></li>
+                        <li><a href="mailto:evgvzubkoff@gmail.com" class="fa-envelope">E-mail</a></li>
+                    </ul>
+                </footer>
             </section>
             
             <!-- Footer -->
@@ -54,21 +36,6 @@
 
         </div>
         
-        <!-- Styles -->
-        <style>
-            .is-flipped .front {
-                display: none;
-            }
-            
-            .back {
-                display: none;
-            }
-            
-            .is-flipped .back {
-                display: block;
-            }
-        </style>
-
         <!-- Scripts -->
         <script>
             if ('addEventListener' in window) {
@@ -83,12 +50,14 @@
             document.body.style.backgroundColor = cssHSL();
 
             // flip card
+            /*
             var card = document.getElementById('main');
                 card.addEventListener('click', function () {
                     card.classList.toggle('is-flipped');
 
                     document.body.style.backgroundColor = cssHSL();
                 });
+            */
                 
             function cssHSL() {
                 return "hsl(" + 360 * Math.random() + ',' + (25 + 70 * Math.random()) + '%,' + (85 + 10 * Math.random()) + '%)';
