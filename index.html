@@ -1,21 +1,70 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Eugene Zubkov</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
 
-<div class="home">
+        <!-- Wrapper -->
+        <div id="wrapper">
 
-  <h1 class="page-heading">
-    <i class="fa fa-bookmark"></i>
-    <span>Blog Posts</span>
-  </h1>
+            <!-- Main -->
+            <section id="main">
+                <header>
+                    <span class="avatar"><img src="images/avatar.png" alt="" /></span>
+                    <h1>Eugene Zubkov</h1>
+                    <p>Web Developer | PHP | E-commerce | Magento Specialist</p>
+                </header>
+                <footer>
+                    <ul class="icons">
+                        <li><a href="https://linkedin.com/in/evgvzubkoff" class="fa-linkedin" target="_blank">Linked In</a></li>
+                        <li><a href="https://instagram.com/evgvzubkoff" class="fa-instagram" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:evgvzubkoff@gmail.com" class="fa-envelope">E-mail</a></li>
+                    </ul>
+                </footer>
+            </section>
+            
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="copyright">
+                    <!-- <li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+                </ul>
+            </footer>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} »</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+        </div>
+        
+        <!-- Scripts -->
+        <script>
+            if ('addEventListener' in window) {
+                window.addEventListener('load', function () {
+                    document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+                });
+                
+                document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+            }
 
-</div>
+            // random background colors
+            document.body.style.backgroundColor = cssHSL();
+
+            // flip card
+            /*
+            var card = document.getElementById('main');
+                card.addEventListener('click', function () {
+                    card.classList.toggle('is-flipped');
+
+                    document.body.style.backgroundColor = cssHSL();
+                });
+            */
+                
+            function cssHSL() {
+                return "hsl(" + 360 * Math.random() + ',' + (25 + 70 * Math.random()) + '%,' + (85 + 10 * Math.random()) + '%)';
+            }
+
+        </script>
+
+    </body>
+</html>

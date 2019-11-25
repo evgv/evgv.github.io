@@ -1,0 +1,44 @@
+# Site configuration
+  title: mblo
+  # description: >
+    # Web developer blog. Inside: Magento, PHP, JavaScript and more.
+  disclaimer: >
+    The postings on this site are my own and don't necessarily represent my employer’s positions, strategies or opinions.
+  copyright: >
+    © Eugene Zubkov, 2018 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>
+  url: "http://evgv.github.io"
+  date_format: '%B %d, %Y'
+  fort_awesome_icon: 'cog fa-spin'
+
+# Owner configuration
+  owner:
+    name: 'Eugene Zubkov'
+    email: 'evgvzubkoff@gmail.com'
+    github: 'evgv'
+    gist: 'evgv'
+    twitter: 'evgvzubkoff'
+    linkedin: 'evgvzubkoff'
+    facebook:
+    google_plus:
+    youtube:
+
+# Post sharing icons
+  sharing:
+    twitter: true
+    linkedin: true
+    facebook: true
+    google_plus: true
+    reddit: true
+
+# Disqus comments configuration (leave blank to disable comments)
+  disqus_shortname: 'evgvgithubio'
+
+# Markdown
+  markdown: kramdown
+  
+# Plugins
+  plugins: [jekyll-sitemap, jekyll-gist]
+  
+# Sass
+  sass:
+    style: compressed 
